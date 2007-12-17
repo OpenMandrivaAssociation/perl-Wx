@@ -13,7 +13,6 @@ Url:		http://search.cpan.org/dist/%{module}/
 Source:		http://cpan.uwinnipeg.ca/cpan/authors/id/M/MB/MBARBON/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildRequires:  wxGTK2.6-devel
-Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %define _requires_exceptions perl(Wx::PlValidator)
 
