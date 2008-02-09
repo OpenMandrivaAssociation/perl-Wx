@@ -1,7 +1,7 @@
 %define module	Wx
 %define name	perl-%{module}
-%define version	0.27
-%define release	%mkrel 2
+%define version	0.81
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -12,7 +12,8 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
 Source:		http://cpan.uwinnipeg.ca/cpan/authors/id/M/MB/MBARBON/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel
-BuildRequires:  wxGTK2.6-devel
+BuildRequires:  wxGTK-devel
+BuildRequires:  perl(Alien::wxWidgets)
 Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %define _requires_exceptions perl(Wx::PlValidator)
