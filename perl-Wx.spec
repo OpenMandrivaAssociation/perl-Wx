@@ -38,9 +38,10 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc Changes
+%doc Changes README.txt
 %{perl_vendorarch}/Wx.pm
 %{perl_vendorarch}/Wx
 %{perl_vendorarch}/auto/Wx
 %{_mandir}/*/*
+%{_bindir}/*
 
