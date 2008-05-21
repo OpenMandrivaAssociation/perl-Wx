@@ -1,6 +1,6 @@
 %define module	Wx
 %define name	perl-%{module}
-%define version	0.82
+%define version	0.83
 %define release	%mkrel 1
 
 Name:		%{name}
@@ -10,7 +10,7 @@ Summary:	Interface to the wxWidgets GUI toolkit
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
-Source:		http://cpan.uwinnipeg.ca/cpan/authors/id/M/MB/MBARBON/%{module}-%{version}.tar.bz2
+Source:     http://www.cpan.org/modules/by-module/Wx/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:  wxGTK-devel
 BuildRequires:  perl(Alien::wxWidgets)
