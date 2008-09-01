@@ -1,7 +1,7 @@
 %define module	Wx
 %define name	perl-%{module}
-%define version	0.84
-%define release	%mkrel 2
+%define version	0.85
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -10,7 +10,7 @@ Summary:	Interface to the wxWidgets GUI toolkit
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
-Source:     http://www.cpan.org/modules/by-module/Wx/%{module}-%{version}.tar.gz
+Source:         http://www.cpan.org/modules/by-module/Wx/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:  wxGTK-devel
 BuildRequires:  perl(Alien::wxWidgets)
@@ -219,6 +219,7 @@ Provides: perl(Wx::PlGridCellEditor)
 Provides: perl(Wx::PlGridCellRenderer)
 Provides: perl(Wx::PlLog)
 Provides: perl(Wx::PlLogPassThrough)
+Provides: perl(Wx::PlPopupTransientWindow)
 Provides: perl(Wx::PlSizer)
 Provides: perl(Wx::PlThreadEvent)
 Provides: perl(Wx::PlValidator)
