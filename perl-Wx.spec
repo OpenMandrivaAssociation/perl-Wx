@@ -1,6 +1,6 @@
 %define module	Wx
 %define name	perl-%{module}
-%define version	0.88
+%define version	0.89
 %define release	%mkrel 1
 
 Name:		%{name}
