@@ -1,7 +1,7 @@
 %define module	Wx
 %define name	perl-%{module}
 %define version	0.89
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Name:		%{name}
 Version:	%{version}
@@ -12,6 +12,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
 Source:         http://www.cpan.org/modules/by-module/Wx/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
+BuildRequires:  lib64wxgtku2.8-devel
 BuildRequires:  wxGTK-devel
 BuildRequires:  perl(Alien::wxWidgets)
 Buildroot:	%{_tmppath}/%{name}-%{version}
@@ -326,7 +327,7 @@ GUI toolkit.
 %setup -q -n %{module}-%{version}
 
 %build
-WX_CONFIG=/usr/bin/wx-config-ansi %{__perl} Makefile.PL INSTALLDIRS=vendor
+WX_CONFIG=/usr/bin/wx-config-unicode %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make "CFLAGS=%{optflags}"
 
 %install
