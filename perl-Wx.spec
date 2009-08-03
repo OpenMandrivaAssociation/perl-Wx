@@ -1,20 +1,20 @@
-%define module	Wx
-%define name	perl-%{module}
-%define version	0.91
-%define release	%mkrel 3
+%define upstream_name	 Wx
+%define upstream_version 0.91
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Interface to the wxWidgets GUI toolkit
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}/
-Source:         http://www.cpan.org/modules/by-module/Wx/%{module}-%{version}.tar.gz
-BuildRequires:	perl-devel
-BuildRequires:  wxgtku2.8-devel
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:    http://www.cpan.org/modules/by-module/Wx/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:  perl(Alien::wxWidgets)
-Buildroot:	%{_tmppath}/%{name}-%{version}
+BuildRequires:  wxgtku2.8-devel
+BuildRequires:	perl-devel
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 # Olivier Thauvin
 # https://qa.mandriva.com/show_bug.cgi?id=43053
@@ -331,7 +331,7 @@ The Wx module is a wrapper for the wxWidgets (formerly known as wxWindows)
 GUI toolkit.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 WX_CONFIG=/usr/bin/wx-config-unicode %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -352,4 +352,3 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/auto/Wx
 %{_mandir}/*/*
 %{_bindir}/*
-
