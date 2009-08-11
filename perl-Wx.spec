@@ -1,5 +1,5 @@
 %define upstream_name	 Wx
-%define upstream_version 0.91
+%define upstream_version 0.92
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:    http://www.cpan.org/modules/by-module/Wx/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(Alien::wxWidgets)
+BuildRequires:  perl(ExtUtils::XSpp)
 BuildRequires:  wxgtku2.8-devel
 BuildRequires:	perl-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
