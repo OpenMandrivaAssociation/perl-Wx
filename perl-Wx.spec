@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:	Interface to the wxWidgets GUI toolkit
 License:	GPL+ or Artistic
@@ -139,6 +139,7 @@ Provides: perl(Wx::GridRangeSelectEvent)
 Provides: perl(Wx::GridSizeEvent)
 Provides: perl(Wx::GridSizer)
 Provides: perl(Wx::GridUpdateLocker)
+Provides: perl(Wx::HeaderCtrlSimple)
 Provides: perl(Wx::HelpControllerBase)
 Provides: perl(Wx::HelpControllerHelpProvider)
 Provides: perl(Wx::HelpEvent)
