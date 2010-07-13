@@ -1,9 +1,9 @@
 %define upstream_name	 Wx
-%define upstream_version 0.9701
+%define upstream_version 0.9702
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Interface to the wxWidgets GUI toolkit
 License:	GPL+ or Artistic
