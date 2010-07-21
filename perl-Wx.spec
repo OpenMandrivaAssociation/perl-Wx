@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:    http://www.cpan.org/modules/by-module/Wx/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(Alien::wxWidgets)
+BuildRequires:  perl(ExtUtils::ParseXS) >= 2.220.300
 BuildRequires:  perl(ExtUtils::XSpp)
 BuildRequires:  wxgtku2.8-devel
 BuildRequires:	perl-devel
