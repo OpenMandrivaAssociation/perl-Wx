@@ -349,3 +349,161 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorarch}/auto/Wx
 %{_mandir}/*/*
 %{_bindir}/*
+
+
+%changelog
+* Sun Feb 12 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.980.0-2
++ Revision: 773653
+- clean out spec
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Mon Aug 23 2010 Jérôme Quelin <jquelin@mandriva.org> 0.980.0-1mdv2011.0
++ Revision: 572267
+- update to 0.98
+
+* Wed Jul 21 2010 Jérôme Quelin <jquelin@mandriva.org> 0.970.200-3mdv2011.0
++ Revision: 556370
+- change min version in buildrequires
+- add minimum version in buildrequires:
+- rebuild for perl 5.12
+- rebuild
+
+* Tue Jul 13 2010 Jérôme Quelin <jquelin@mandriva.org> 0.970.200-1mdv2011.0
++ Revision: 552496
+- update to 0.9702
+
+* Fri Apr 23 2010 Jérôme Quelin <jquelin@mandriva.org> 0.970.100-2mdv2010.1
++ Revision: 538298
+- adding missing provides:
+
+* Fri Feb 12 2010 Jérôme Quelin <jquelin@mandriva.org> 0.970.100-1mdv2010.1
++ Revision: 504496
+- update to 0.9701
+
+* Wed Feb 10 2010 Jérôme Quelin <jquelin@mandriva.org> 0.970.0-1mdv2010.1
++ Revision: 503737
+- update to 0.97
+
+* Sun Jan 10 2010 Jérôme Quelin <jquelin@mandriva.org> 0.960.0-1mdv2010.1
++ Revision: 488854
+- update to 0.96
+
+* Wed Dec 30 2009 Jérôme Quelin <jquelin@mandriva.org> 0.950.0-1mdv2010.1
++ Revision: 483880
+- update to 0.95
+
+* Sun Nov 08 2009 Jérôme Quelin <jquelin@mandriva.org> 0.940.0-1mdv2010.1
++ Revision: 463145
+- update to 0.94
+
+* Fri Sep 25 2009 Jérôme Quelin <jquelin@mandriva.org> 0.930.0-1mdv2010.0
++ Revision: 448609
+- update to 0.93
+
+* Tue Aug 11 2009 Jérôme Quelin <jquelin@mandriva.org> 0.920.0-1mdv2010.0
++ Revision: 415113
+- update to 0.92
+
+* Mon Aug 03 2009 Jérôme Quelin <jquelin@mandriva.org> 0.910.0-1mdv2010.0
++ Revision: 408101
+- rebuild using %%perl_convert_version
+
+* Sat Jul 25 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.91-3mdv2010.0
++ Revision: 399635
+- rebuild with fixed perl-Alien-wxWidgets package (fix #45256)
+
+* Wed Jun 17 2009 Jérôme Quelin <jquelin@mandriva.org> 0.91-2mdv2010.0
++ Revision: 386781
+- adding missing provides:
+
+* Mon May 18 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.91-1mdv2010.0
++ Revision: 376915
+- update to new version 0.91
+
+* Mon May 11 2009 Jérôme Quelin <jquelin@mandriva.org> 0.90-1mdv2010.0
++ Revision: 374344
+- update to new version 0.90
+
+* Sat May 09 2009 Jérôme Quelin <jquelin@mandriva.org> 0.89-4mdv2010.0
++ Revision: 373698
+- forcing rebuild
+
+* Sun Feb 15 2009 Jérôme Quelin <jquelin@mandriva.org> 0.89-3mdv2009.1
++ Revision: 340471
+- removing non-unicode dependency
+
+* Sat Feb 14 2009 Olivier Thauvin <nanardon@mandriva.org> 0.89-2mdv2009.1
++ Revision: 340292
+- fix buildrequires
+
+  + Jérôme Quelin <jquelin@mandriva.org>
+    - fix bug #47728: part two
+
+* Mon Dec 08 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.89-1mdv2009.1
++ Revision: 311972
+- update to new version 0.89
+
+* Mon Nov 10 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.88-1mdv2009.1
++ Revision: 301684
+- update to new version 0.88
+
+* Sun Nov 09 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.87-1mdv2009.1
++ Revision: 301381
+- update to new version 0.87
+
+* Fri Sep 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.86-1mdv2009.0
++ Revision: 281120
+- update to new version 0.86
+
+* Mon Sep 01 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.85-1mdv2009.0
++ Revision: 278093
+- Add sources
+- New version 0.85
+
+* Sat Aug 23 2008 Olivier Thauvin <nanardon@mandriva.org> 0.84-2mdv2009.0
++ Revision: 275366
+- fix #43053
+
+* Mon Jun 30 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.84-1mdv2009.0
++ Revision: 230284
+- update to new version 0.84
+
+* Wed May 21 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.83-1mdv2009.0
++ Revision: 209845
+- new version
+
+* Tue Apr 15 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.82-1mdv2009.0
++ Revision: 193956
+- update to new version 0.82
+
+* Sun Feb 10 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.81-1mdv2008.1
++ Revision: 164876
+- new version
+
+* Tue Jan 15 2008 Thierry Vignaud <tv@mandriva.org> 0.27-2mdv2008.1
++ Revision: 152411
+- rebuild
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 0.27-1mdv2008.1
++ Revision: 123985
+- kill re-definition of %%buildroot on Pixel's request
+
+
+* Mon Apr 03 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.27-1mdk
+- New release 0.27
+- spec cleanup
+- fix directory ownership
+
+* Thu Dec 15 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 0.26-1mdk
+- 0.26
+- Require most recent wxGTK
+
+* Thu Sep 29 2005 Nicolas L�cureuil <neoclust@mandriva.org> 0.25-1mdk
+- 0.25
+
+* Fri Mar 18 2005 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 0.22-1mdk
+- first mdk release (by trem, <trem@zarb.org>)
+
