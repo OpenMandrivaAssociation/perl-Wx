@@ -1,15 +1,15 @@
 %define upstream_name Wx
-%define upstream_version 0.98
+%define upstream_version 0.9922
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.9922
+Release:	1
 
 Summary:	Interface to the wxWidgets GUI toolkit
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Wx/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Wx/Wx-0.9922.tar.gz
 
 BuildRequires:	perl(Alien::wxWidgets)
 BuildRequires:	perl(ExtUtils::ParseXS) >= 2.220.600
@@ -501,9 +501,10 @@ perl Makefile.PL INSTALLDIRS=vendor
 - 0.26
 - Require most recent wxGTK
 
-* Thu Sep 29 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.25-1mdk
+* Thu Sep 29 2005 Nicolas LÃ©cureuil <neoclust@mandriva.org> 0.25-1mdk
 - 0.25
 
 * Fri Mar 18 2005 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 0.22-1mdk
 - first mdk release (by trem, <trem@zarb.org>)
+
 

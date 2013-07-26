@@ -1,2 +1,4 @@
+removed_sources:
+  Wx-0.98.tar.gz: ef7c1d07268394db565e082e4f0760cec4f7e737
 sources:
-  "Wx-0.98.tar.gz": ef7c1d07268394db565e082e4f0760cec4f7e737
+  Wx-0.9922.tar.gz: eae86e4f088b69b155b0588ee6dccaaf1ad7c8fd
