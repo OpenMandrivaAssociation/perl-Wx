@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.9922
-Release:	1
+Release:	2
 
 Summary:	Interface to the wxWidgets GUI toolkit
 License:	GPL+ or Artistic
@@ -222,6 +222,8 @@ Provides:	perl(Wx::PlEvent)
 Provides:	perl(Wx::PlFileSystemHandler)
 Provides:	perl(Wx::PlGridCellEditor)
 Provides:	perl(Wx::PlGridCellRenderer)
+Provides:	perl(Wx::PlHeaderCtrl)
+Provides:	perl(Wx::PlHeaderCtrlSimple)
 Provides:	perl(Wx::PlHVScrolledWindow)
 Provides:	perl(Wx::PlLog)
 Provides:	perl(Wx::PlLogPassThrough)
