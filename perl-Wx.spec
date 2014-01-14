@@ -10,6 +10,7 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Wx/Wx-0.9922.tar.gz
+Source1:	%{name}.rpmlintrc
 
 BuildRequires:	perl(Alien::wxWidgets)
 BuildRequires:	perl(ExtUtils::ParseXS) >= 2.220.600
