@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.9922
-Release:	2
+Release:	3
 
 Summary:	Interface to the wxWidgets GUI toolkit
 License:	GPL+ or Artistic
@@ -159,6 +159,7 @@ Provides:	perl(Wx::Image)
 Provides:	perl(Wx::ImageHandler)
 Provides:	perl(Wx::ImageList)
 Provides:	perl(Wx::IndividualLayoutConstraint)
+Provides:	perl(Wx::InfoBar)
 Provides:	perl(Wx::InitDialogEvent)
 Provides:	perl(Wx::InputStream)
 Provides:	perl(Wx::InternetFSHandler)
@@ -231,6 +232,7 @@ Provides:	perl(Wx::PlLogPassThrough)
 Provides:	perl(Wx::PlPopupTransientWindow)
 Provides:	perl(Wx::PlSizer)
 Provides:	perl(Wx::PlThreadEvent)
+Provides:	perl(Wx::PlTreeListItemComparator)
 Provides:	perl(Wx::PlValidator)
 Provides:	perl(Wx::PlVListBox)
 Provides:	perl(Wx::PlVScrolledWindow)
@@ -253,9 +255,12 @@ Provides:	perl(Wx::ProgressDialog)
 Provides:	perl(Wx::PropertyGrid)
 Provides:	perl(Wx::RadioBox)
 Provides:	perl(Wx::RadioButton)
+Provides:	perl(Wx::RearrangeCtrl)
 Provides:	perl(Wx::Rect)
 Provides:	perl(Wx::RegConfig)
 Provides:	perl(Wx::Region)
+Provides:	perl(Wx::Ribbon)
+Provides:	perl(Wx::RibbonBar)
 Provides:	perl(Wx::RichText)
 Provides:	perl(Wx::SashEvent)
 Provides:	perl(Wx::SashWindow)
@@ -313,6 +318,7 @@ Provides:	perl(Wx::TreeCtrl)
 Provides:	perl(Wx::TreeEvent)
 Provides:	perl(Wx::TreeItemData)
 Provides:	perl(Wx::TreeItemId)
+Provides:	perl(Wx::TreeListCtrl)
 Provides:	perl(Wx::UpdateUIEvent)
 Provides:	perl(Wx::URLDataObject)
 Provides:	perl(Wx::Validator)
