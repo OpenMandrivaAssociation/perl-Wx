@@ -1,9 +1,9 @@
 %define upstream_name Wx
-%define upstream_version 0.9923
+%define upstream_version 0.9928
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	1
 
 Summary:	Interface to the wxWidgets GUI toolkit
 
@@ -16,7 +16,7 @@ Source1:	%{name}.rpmlintrc
 BuildRequires:	perl(Alien::wxWidgets)
 BuildRequires:	perl(ExtUtils::ParseXS) >= 2.220.600
 BuildRequires:	perl(ExtUtils::XSpp)
-BuildRequires:	wxgtku2.8-devel
+BuildRequires:	wxgtku3.0-devel
 BuildRequires:	perl-devel
 
 # Olivier Thauvin
@@ -349,7 +349,7 @@ GUI toolkit.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make CFLAGS="%{optflags}"
+%make
 
 %install
 %makeinstall_std
