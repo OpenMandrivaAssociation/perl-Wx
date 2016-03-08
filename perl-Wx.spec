@@ -16,7 +16,7 @@ Source1:	%{name}.rpmlintrc
 BuildRequires:	perl(Alien::wxWidgets)
 BuildRequires:	perl(ExtUtils::ParseXS) >= 2.220.600
 BuildRequires:	perl(ExtUtils::XSpp)
-BuildRequires:	wxgtku3.0-devel
+BuildRequires:	wxgtku2.8-devel
 BuildRequires:	perl-devel
 
 # Olivier Thauvin
