@@ -345,21 +345,21 @@ The Wx module is a wrapper for the wxWidgets (formerly known as wxWindows)
 GUI toolkit.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{upstream_version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes README.txt
 %{perl_vendorarch}/Wx.pm
 %{perl_vendorarch}/Wx
 %{perl_vendorarch}/auto/Wx
-%{_mandir}/*/*
+%doc %{_mandir}/*/*
 %{_bindir}/*
 
 
